@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+
+  
+
+<!-- Add padding to push content below fixed header -->
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BJJ-OPS – The Ultimate BJJ Academy System</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Alpine.js -->
+<script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+  <style>
+    body { font-family: 'Outfit', sans-serif; }
+    .fade-up {
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeUp 1s ease-out forwards;
+    }
+    @keyframes fadeUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    .shimmer {
+      animation: shimmer 2.5s ease-in-out infinite;
+    }
+    @keyframes shimmer {
+      0% { filter: brightness(1); }
+      50% { filter: brightness(1.8); }
+      100% { filter: brightness(1); }
+    }
+  </style>
+</head>
+
+<body class="bg-white text-gray-800">
+  <header class="fixed top-0 left-0 w-full z-50 bg-white bg-opacity-40 backdrop-blur-md shadow-sm">
+  <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+    <h1 class="text-xl font-bold text-purple-700">BJJ-OPS</h1>
+    <nav class="space-x-6 text-sm md:text-base font-medium text-gray-800">
+      <a href="#features" class="hover:text-purple-500 transition">Features</a>
+      <a href="#pricing" class="hover:text-purple-500 transition">Pricing</a>
+      <a href="#faq" class="hover:text-purple-500 transition">FAQ</a>
+      <a href="#contact" class="hover:text-purple-500 transition">Contact</a>
+    </nav>
+  </div>
+</header>
+  <!-- HERO COM VÍDEO DE FUNDO -->
+<section class="relative h-screen w-full flex items-center justify-center text-center text-white overflow-hidden">
+  <!-- Vídeo de fundo -->
+  <video autoplay muted loop playsinline class="absolute w-full h-full object-cover opacity-80 z-0">
+    <source src="https://www.dropbox.com/scl/fi/kibx0onqqpoitw7v19tvk/Add-a-subheading.mp4?rlkey=nd871jrt0od4f1zk14k6u4q5z&raw=1" type="video/mp4">
+    Seu navegador não suporta vídeo em HTML5.
+  </video>
+
+  <!-- Camada escura sutil -->
+  <div class="absolute inset-0 bg-black bg-opacity-30 z-0"></div>
+
+  <!-- Texto -->
+  <div class="z-10 px-6 mt-20">
+    <h1 class="text-4xl md:text-6xl font-bold mb-4 text-white drop-shadow-[0_2px_4px_rgba(0,0,0,0.7)]">
+      Black belt grade management.
+    </h1>
+    <p class="text-xl md:text-2xl mb-6 text-white drop-shadow-md">
+      Take back control of your academy — without spreadsheets or stress.
+    </p>
+    <a href="https://wa.me/14079280183" target="_blank" class="inline-block bg-green-500 hover:bg-green-600 text-white font-semibold py-3 px-6 rounded-xl shadow-lg transition">
+      Talk on WhatsApp
+    </a>
+  </div>
+</section>
+
+<section class="py-12 bg-white text-center">
+  <div class="flex flex-col items-center max-w-4xl mx-auto">
+    <div class="text-4xl mb-2">🔥</div>
+    <p class="text-xl font-semibold text-gray-800">
+      A powerful system built for <span class="text-purple-700 font-bold">Brazilian Jiu-Jitsu academies</span>: <p>automate check-ins, track belts, manage payments, and level up your students with ease.</p>
+    </p>
+  </div>
+</section>
+
+
+
+  <!-- Camada preta sutil -->
+  <div class="absolute inset-0 bg-black bg-opacity-30 z-0"></div>
+
+    </div>
+  </section>
+
+  <!-- Benefits Section in Cards -->
+<section class="py-16 px-6 bg-white">
+  <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
+    
+    <!-- Card 1 -->
+    <div class="bg-white rounded-xl shadow-md border border-gray-200 p-6 text-left hover:shadow-lg transition">
+      <div class="text-3xl mb-2">🟢</div>
+      <h3 class="text-xl font-semibold mb-2">Photo-Based Attendance</h3>
+      <p class="text-gray-700">
+        Just upload your class photo — we do the rest. BJJ-OPS uses facial recognition to detect who was present in the group photo at the end of class. If someone’s not in the system, it suggests a new student registration.
+      </p>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="bg-white rounded-xl shadow-md border border-gray-200 p-6 text-left hover:shadow-lg transition">
+      <div class="text-3xl mb-2">🎖</div>
+      <h3 class="text-xl font-semibold mb-2">Belt & Stripe Progression</h3>
+      <p class="text-gray-700">
+        Track every promotion, with full history, stripe count, and notes.
+      </p>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="bg-white rounded-xl shadow-md border border-gray-200 p-6 text-left hover:shadow-lg transition">
+      <div class="text-3xl mb-2">💳</div>
+      <h3 class="text-xl font-semibold mb-2">Integrated Stripe Payments</h3>
+      <p class="text-gray-700">
+        Plans, overdue alerts, invoices, and automated billing.
+      </p>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="bg-white rounded-xl shadow-md border border-gray-200 p-6 text-left hover:shadow-lg transition">
+      <div class="text-3xl mb-2">📈</div>
+      <h3 class="text-xl font-semibold mb-2">Student Progress Dashboard</h3>
+      <p class="text-gray-700">
+        Motivate your students with clean visuals of training consistency and evolution.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+
+
+<!-- Testimonials Carousel Colorful -->
+<section class="py-20 text-gray-800" x-data="{
+  activeSlide: 0,
+  testimonials: [
+    { quote: '“BJJ-OPS made me feel like I had a full team behind me. I save hours each week and everything’s under control.”', author: '— Professor Ricardo M., Black Belt 🥋', bg: 'bg-blue-50' },
+    { quote: '“Stripe payments, QR check-ins, belt tracking… it just works. OSS!”', author: '— Coach Laura T., Academy Owner 🏆', bg: 'bg-purple-50' },
+    { quote: '“I stopped using spreadsheets. This system changed the way I run my school.”', author: '— Master Joao P., 4th Degree Black Belt', bg: 'bg-green-50' },
+    { quote: '“The facial recognition attendance is pure magic. Students love it!”', author: '— Sensei Carla R., School Director', bg: 'bg-yellow-50' }
+  ],
+  init() {
+    setInterval(() => {
+      this.activeSlide = (this.activeSlide + 1) % this.testimonials.length;
+    }, 6000);
+  }
+}" x-init="init()">
+  <h2 class="text-3xl font-bold text-center mb-12">💬 What People Are Saying</h2>
+
+  <!-- Slide -->
+  <div 
+    :class="testimonials[activeSlide].bg + ' rounded-xl p-8 transition duration-500 ease-in-out shadow-md text-center max-w-3xl mx-auto'" 
+  >
+    <blockquote class="text-xl italic mb-4" x-text="testimonials[activeSlide].quote"></blockquote>
+    <p class="text-sm font-semibold text-gray-700" x-text="testimonials[activeSlide].author"></p>
+  </div>
+
+  <!-- Arrows -->
+  <div class="flex justify-center mt-8 space-x-4">
+    <button @click="activeSlide = (activeSlide === 0) ? testimonials.length - 1 : activeSlide - 1"
+            class="w-10 h-10 flex items-center justify-center rounded-full bg-gray-200 hover:bg-gray-300 transition">
+      ←
+    </button>
+    <button @click="activeSlide = (activeSlide === testimonials.length - 1) ? 0 : activeSlide + 1"
+            class="w-10 h-10 flex items-center justify-center rounded-full bg-gray-200 hover:bg-gray-300 transition">
+      →
+    </button>
+  </div>
+</section>
+
+
+   
+<!-- WhatsApp Floating Button -->
+<a href="https://wa.me/14079280183" target="_blank" aria-label="Chat on WhatsApp"
+   class="fixed bottom-5 right-5 bg-green-500 hover:bg-green-600 text-white rounded-full p-4 shadow-lg z-50">
+  <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+    <path d="M20.52 3.48A11.9 11.9 0 0 0 12 0C5.37 0 0 5.38 0 12c0 2.11.55 4.1 1.58 5.89L0 24l6.3-1.65A11.93 11.93 0 0 0 12 24c6.63 0 12-5.37 12-12 0-3.2-1.25-6.22-3.48-8.52zM12 22a9.93 9.93 0 0 1-5.11-1.41l-.37-.22-3.74.98.99-3.64-.24-.38A9.94 9.94 0 0 1 2 12c0-5.51 4.49-10 10-10s10 4.49 10 10-4.49 10-10 10zm5.17-7.4c-.28-.14-1.63-.8-1.88-.89-.25-.1-.44-.14-.63.14s-.72.88-.88 1.06c-.16.18-.32.2-.6.07a8.08 8.08 0 0 1-2.38-1.47 8.86 8.86 0 0 1-1.63-2.02c-.17-.3-.02-.46.13-.6.14-.14.31-.36.46-.53.15-.17.2-.29.3-.49.1-.2.05-.37-.03-.51-.08-.14-.63-1.52-.86-2.09-.22-.53-.45-.46-.63-.47-.16 0-.35 0-.54 0s-.5.07-.76.36c-.26.28-1 1-1 2.43 0 1.42 1.02 2.8 1.17 2.99.14.19 2.02 3.1 4.91 4.35.69.3 1.23.48 1.65.62.7.22 1.34.19 1.85.12.56-.08 1.63-.67 1.87-1.32.23-.65.23-1.21.16-1.32-.07-.11-.25-.18-.52-.32z"/>
+  </svg>
+</a>
+
+<!-- Pricing Section -->
+<section class="py-20 bg-gradient-to-br from-white to-purple-50 px-6 text-gray-800">
+  <div class="max-w-4xl mx-auto text-center">
+    <h2 class="text-4xl font-extrabold mb-4">💰 Simple Pricing</h2>
+    <p class="text-lg text-gray-600 mb-12">All the power of BJJ OPS in one straightforward plan. No hidden fees.</p>
+
+    <div class="relative bg-purple-50 shadow-2xl rounded-2xl p-10 max-w-xl mx-auto border border-purple-200">
+
+      <!-- Badge -->
+      <div class="absolute top-0 right-0 bg-purple-600 text-white text-xs font-semibold px-3 py-1 rounded-bl-xl">
+        💎 Recommended
+      </div>
+
+      <h3 class="text-2xl font-semibold text-purple-700 mb-2">🥋 Full Access Plan</h3>
+      <p class="text-5xl font-bold text-purple-600 mb-2">$199<span class="text-xl font-medium text-gray-500">/month</span></p>
+      <p class="text-gray-700 mb-6">One-time setup fee: <strong>$99</strong></p>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-left text-gray-800 mb-8">
+        <div class="space-y-2">
+          <p>✔ Up to 500 active students</p>
+          <p>✔ 3 instructors included</p>
+          <p>✔ Unlimited belt & stripe records</p>
+          <p>✔ Photo-based attendance system</p>
+        </div>
+        <div class="space-y-2">
+          <p>✔ Automated Stripe payments</p>
+          <p>✔ WhatsApp & email support</p>
+          <p>✔ Lifetime updates</p>
+        </div>
+      </div>
+
+      <a href="#" class="inline-block bg-purple-600 hover:bg-purple-700 text-white px-6 py-3 rounded-xl text-lg font-semibold shadow transition">
+        🚀 Start Now
+      </a>
+    </div>
+  </div>
+</section>
+
+
+
+
+<!-- FAQ Section -->
+<section class="py-20 bg-purple-50 text-gray-800">
+  <div class="max-w-3xl mx-auto">
+    <h2 class="text-3xl font-bold text-center mb-12">❓ Frequently Asked Questions</h2>
+
+    <div class="space-y-4" x-data="{ open: null }">
+
+      <!-- Item 1 -->
+      <div class="border border-purple-200 rounded-xl bg-white shadow-sm">
+        <button @click="open === 1 ? open = null : open = 1"
+          class="w-full text-left px-6 py-4 font-semibold flex justify-between items-center text-purple-700">
+          Is BJJ-OPS only for Jiu-Jitsu?
+          <span x-show="open !== 1">➕</span>
+          <span x-show="open === 1">➖</span>
+        </button>
+        <div x-show="open === 1" x-collapse class="px-6 pb-4 text-gray-700">
+          Yes — it was built exclusively for BJJ academies.
+        </div>
+      </div>
+
+      <!-- Item 2 -->
+      <div class="border border-purple-200 rounded-xl bg-white shadow-sm">
+        <button @click="open === 2 ? open = null : open = 2"
+          class="w-full text-left px-6 py-4 font-semibold flex justify-between items-center text-purple-700">
+          Do I need to install anything?
+          <span x-show="open !== 2">➕</span>
+          <span x-show="open === 2">➖</span>
+        </button>
+        <div x-show="open === 2" x-collapse class="px-6 pb-4 text-gray-700">
+          No — it’s 100% cloud-based and mobile-friendly.
+        </div>
+      </div>
+
+      <!-- Item 3 -->
+      <div class="border border-purple-200 rounded-xl bg-white shadow-sm">
+        <button @click="open === 3 ? open = null : open = 3"
+          class="w-full text-left px-6 py-4 font-semibold flex justify-between items-center text-purple-700">
+          Does Stripe work in my country?
+          <span x-show="open !== 3">➕</span>
+          <span x-show="open === 3">➖</span>
+        </button>
+        <div x-show="open === 3" x-collapse class="px-6 pb-4 text-gray-700">
+          Stripe is available in many countries. Contact us to confirm yours.
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+  <!-- Contact -->
+  <footer class="bg-gray-900 text-white text-center py-12">
+    <p class="mb-2"><a href="https://wa.me/14079280183" class="underline">(407) 928-0183</a></p>
+    <p class="mb-2">📧 <a href="mailto:system4bjj@gmail.com" class="underline">system4bjj@gmail.com</a></p>
+    
+    <p class="text-sm mt-4">Powered by OPS! Creative Solutions</p>
+  </footer>
+<p style="border-radius: 8px; text-align: center; font-size: 12px; color: #fff; margin-top: 16px;position: fixed; left: 8px; bottom: 8px; z-index: 10; background: rgba(0, 0, 0, 0.8); padding: 4px 8px;">Made with <img src="https://enzostvs-deepsite.hf.space/logo.svg" alt="DeepSite Logo" style="width: 16px; height: 16px; vertical-align: middle;display:inline-block;margin-right:3px;filter:brightness(0) invert(1);"><a href="https://enzostvs-deepsite.hf.space" style="color: #fff;text-decoration: underline;" target="_blank" >DeepSite</a> - 🧬 <a href="https://enzostvs-deepsite.hf.space?remix=naniccunha/angelops-sell" style="color: #fff;text-decoration: underline;" target="_blank" >Remix</a></p></body>
+</html>
