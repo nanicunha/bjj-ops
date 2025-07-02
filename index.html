@@ -245,13 +245,13 @@
 <!-- FAQ Section -->
 
 
-   <section class="py-12 bg-[#f9f4ff]">
+  <section class="py-12 bg-[#f9f4ff]">
   <div class="max-w-2xl mx-auto text-center">
     <h2 class="text-3xl font-extrabold text-gray-900 mb-10 font-[Orbitron]">
       🥋 Everything You Want to Know<span class="text-red-600">.</span>
     </h2>
 
-    <!-- FAQ ITEM - Faixa branca -->
+    <!-- ITEM 1 -->
     <div x-data="{ open: false }" class="mb-4">
       <div @click="open = !open" class="flex items-center h-16 bg-white rounded-lg shadow-md overflow-hidden cursor-pointer">
         <div class="w-20 bg-black h-full"></div>
@@ -260,12 +260,12 @@
         </div>
         <div class="px-4 text-2xl text-black" x-text="open ? '-' : '+'"></div>
       </div>
-      <div x-show="open" x-transition class="mt-2 text-sm text-gray-700 text-left px-6">
+      <div x-show="open" x-transition class="mt-2 px-6 text-lg text-black text-center font-sans">
         Not at all! While it’s tailored for Jiu-Jitsu academies, BJJ-OPS can be used by any martial arts or fitness school.
       </div>
     </div>
 
-    <!-- Faixa azul -->
+    <!-- ITEM 2 -->
     <div x-data="{ open: false }" class="mb-4">
       <div @click="open = !open" class="flex items-center h-16 bg-blue-700 rounded-lg shadow-md overflow-hidden text-white cursor-pointer">
         <div class="w-20 bg-black h-full"></div>
@@ -274,12 +274,12 @@
         </div>
         <div class="px-4 text-2xl" x-text="open ? '-' : '+'"></div>
       </div>
-      <div x-show="open" x-transition class="mt-2 text-sm text-white text-left px-6">
+      <div x-show="open" x-transition class="mt-2 px-6 text-lg text-black text-center font-sans bg-white rounded-b-lg">
         No installation required. BJJ-OPS is 100% web-based. You can use it on any device, anywhere.
       </div>
     </div>
 
-    <!-- Faixa roxa -->
+    <!-- ITEM 3 -->
     <div x-data="{ open: false }" class="mb-4">
       <div @click="open = !open" class="flex items-center h-16 bg-purple-600 rounded-lg shadow-md overflow-hidden text-white cursor-pointer">
         <div class="w-20 bg-black h-full"></div>
@@ -288,12 +288,12 @@
         </div>
         <div class="px-4 text-2xl" x-text="open ? '-' : '+'"></div>
       </div>
-      <div x-show="open" x-transition class="mt-2 text-sm text-white text-left px-6">
+      <div x-show="open" x-transition class="mt-2 px-6 text-lg text-black text-center font-sans bg-white rounded-b-lg">
         Stripe supports over 45 countries. If it’s not available in yours, we can help set up alternatives.
       </div>
     </div>
 
-    <!-- Faixa marrom -->
+    <!-- ITEM 4 -->
     <div x-data="{ open: false }" class="mb-4">
       <div @click="open = !open" class="flex items-center h-16 bg-[#5C3A00] rounded-lg shadow-md overflow-hidden text-white cursor-pointer">
         <div class="w-20 bg-black h-full"></div>
@@ -302,12 +302,12 @@
         </div>
         <div class="px-4 text-2xl" x-text="open ? '-' : '+'"></div>
       </div>
-      <div x-show="open" x-transition class="mt-2 text-sm text-white text-left px-6">
+      <div x-show="open" x-transition class="mt-2 px-6 text-lg text-black text-center font-sans bg-white rounded-b-lg">
         Absolutely. It’s fully responsive and works beautifully on phones, tablets, and desktops.
       </div>
     </div>
 
-    <!-- Faixa preta com ponta vermelha -->
+    <!-- ITEM 5 -->
     <div x-data="{ open: false }" class="mb-4">
       <div @click="open = !open" class="flex items-center h-16 bg-black rounded-lg shadow-md overflow-hidden text-white cursor-pointer">
         <div class="w-20 bg-red-600 h-full"></div>
@@ -316,12 +316,12 @@
         </div>
         <div class="px-4 text-2xl" x-text="open ? '-' : '+'"></div>
       </div>
-      <div x-show="open" x-transition class="mt-2 text-sm text-white text-left px-6">
+      <div x-show="open" x-transition class="mt-2 px-6 text-lg text-black text-center font-sans bg-white rounded-b-lg">
         Currently we support Stripe only, but custom integrations are possible on request.
       </div>
     </div>
   </div>
-</section>
+<section>
   <!-- Contact -->
   <footer id="contact" class="bg-gray-900 text-white text-center py-12">
     <p class="mb-2"><a href="https://wa.me/14079280183" class="underline">(407) 928-0183</a></p>
