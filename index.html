@@ -17,6 +17,9 @@
 <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
 
   <style>
+    html {
+  scroll-behavior: smooth;
+}
     body { font-family: 'Outfit', sans-serif; }
     .fade-up {
       opacity: 0;
@@ -86,16 +89,12 @@
   </div>
 </section>
 
-
-
   <!-- Camada preta sutil -->
   <div class="absolute inset-0 bg-black bg-opacity-30 z-0"></div>
 
-    </div>
-  </section>
 
   <!-- Benefits Section in Cards -->
-<section class="py-16 px-6 bg-white">
+<section id="features" class="py-16 px-6 bg-white">
   <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
     
     <!-- Card 1 -->
@@ -188,7 +187,7 @@
 </a>
 
 <!-- Pricing Section -->
-<section class="py-20 bg-gradient-to-br from-white to-purple-50 px-6 text-gray-800">
+<section id="pricing" class="py-20 bg-gradient-to-br from-white to-purple-50 px-6 text-gray-800">
   <div class="max-w-4xl mx-auto text-center">
     <h2 class="text-4xl font-extrabold mb-4">💰 Simple Pricing</h2>
     <p class="text-lg text-gray-600 mb-12">All the power of BJJ OPS in one straightforward plan. No hidden fees.</p>
@@ -229,7 +228,9 @@
 
 
 <!-- FAQ Section -->
-<section class="py-20 bg-purple-50 text-gray-800">
+<section id="faq" class="py-20 bg-purple-50 text-gray-800">
+
+
   <div class="max-w-3xl mx-auto">
     <h2 class="text-3xl font-bold text-center mb-12">❓ Frequently Asked Questions</h2>
 
@@ -279,7 +280,7 @@
 </section>
 
   <!-- Contact -->
-  <footer class="bg-gray-900 text-white text-center py-12">
+  <footer id="contact" class="bg-gray-900 text-white text-center py-12">
     <p class="mb-2"><a href="https://wa.me/14079280183" class="underline">(407) 928-0183</a></p>
     <p class="mb-2">📧 <a href="mailto:system4bjj@gmail.com" class="underline">system4bjj@gmail.com</a></p>
     
