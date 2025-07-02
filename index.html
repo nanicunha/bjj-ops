@@ -231,55 +231,100 @@
 
 <!-- FAQ Section -->
 <section id="faq" class="py-20 bg-purple-50 text-gray-800">
+  <div class="max-w-4xl mx-auto text-center">
+    <h2 class="text-3xl font-bold mb-12">❓ Frequently Asked Questions</h2>
 
+    <div class="space-y-4 text-left" x-data="{ open: null }">
 
-  <div class="max-w-3xl mx-auto">
-    <h2 class="text-3xl font-bold text-center mb-12">❓ Frequently Asked Questions</h2>
-
-    <div class="space-y-4" x-data="{ open: null }">
-
-      <!-- Item 1 -->
-      <div class="border border-purple-200 rounded-xl bg-white shadow-sm">
-        <button @click="open === 1 ? open = null : open = 1"
-          class="w-full text-left px-6 py-4 font-semibold flex justify-between items-center text-purple-700">
-          Is BJJ-OPS only for Jiu-Jitsu?
-          <span x-show="open !== 1">➕</span>
-          <span x-show="open === 1">➖</span>
-        </button>
-        <div x-show="open === 1" x-collapse class="px-6 pb-4 text-gray-700">
-          Yes — it was built exclusively for BJJ academies.
+      <!-- Faixa Branca com ponta preta e 4 tarjas -->
+      <div class="flex items-center rounded-xl overflow-hidden shadow">
+        <div class="flex-shrink-0 bg-white text-black w-full px-6 py-4 font-semibold text-lg flex justify-between items-center">
+          <span>Is BJJ-OPS only for Jiu-Jitsu?</span>
+          <span @click="open === 1 ? open = null : open = 1" class="cursor-pointer text-xl">+</span>
+        </div>
+        <div class="flex gap-[2px] bg-black px-3 py-4">
+          <div class="w-[3px] h-6 bg-white"></div>
+          <div class="w-[3px] h-6 bg-white"></div>
+          <div class="w-[3px] h-6 bg-white"></div>
+          <div class="w-[3px] h-6 bg-white"></div>
         </div>
       </div>
-
-      <!-- Item 2 -->
-      <div class="border border-purple-200 rounded-xl bg-white shadow-sm">
-        <button @click="open === 2 ? open = null : open = 2"
-          class="w-full text-left px-6 py-4 font-semibold flex justify-between items-center text-purple-700">
-          Do I need to install anything?
-          <span x-show="open !== 2">➕</span>
-          <span x-show="open === 2">➖</span>
-        </button>
-        <div x-show="open === 2" x-collapse class="px-6 pb-4 text-gray-700">
-          No — it’s 100% cloud-based and mobile-friendly.
-        </div>
+      <div x-show="open === 1" x-collapse class="bg-white px-6 pb-4 rounded-b-xl text-sm">
+        Yes — it was built exclusively for BJJ academies.
       </div>
 
-      <!-- Item 3 -->
-      <div class="border border-purple-200 rounded-xl bg-white shadow-sm">
-        <button @click="open === 3 ? open = null : open = 3"
-          class="w-full text-left px-6 py-4 font-semibold flex justify-between items-center text-purple-700">
-          Does Stripe work in my country?
-          <span x-show="open !== 3">➕</span>
-          <span x-show="open === 3">➖</span>
-        </button>
-        <div x-show="open === 3" x-collapse class="px-6 pb-4 text-gray-700">
-          Stripe is available in many countries. Contact us to confirm yours.
+      <!-- Faixa Azul -->
+      <div class="flex items-center rounded-xl overflow-hidden shadow">
+        <div class="flex-shrink-0 bg-[#1E3A8A] text-white w-full px-6 py-4 font-semibold text-lg flex justify-between items-center">
+          <span>Do I need to install anything?</span>
+          <span @click="open === 2 ? open = null : open = 2" class="cursor-pointer text-xl">+</span>
         </div>
+        <div class="flex gap-[2px] bg-black px-3 py-4">
+          <div class="w-[3px] h-6 bg-white"></div>
+          <div class="w-[3px] h-6 bg-white"></div>
+          <div class="w-[3px] h-6 bg-white"></div>
+          <div class="w-[3px] h-6 bg-white"></div>
+        </div>
+      </div>
+      <div x-show="open === 2" x-collapse class="bg-white px-6 pb-4 rounded-b-xl text-sm">
+        No — it’s 100% cloud-based and mobile-friendly.
+      </div>
+
+      <!-- Faixa Roxa -->
+      <div class="flex items-center rounded-xl overflow-hidden shadow">
+        <div class="flex-shrink-0 bg-[#6D28D9] text-white w-full px-6 py-4 font-semibold text-lg flex justify-between items-center">
+          <span>Does Stripe work in my country?</span>
+          <span @click="open === 3 ? open = null : open = 3" class="cursor-pointer text-xl">+</span>
+        </div>
+        <div class="flex gap-[2px] bg-black px-3 py-4">
+          <div class="w-[3px] h-6 bg-white"></div>
+          <div class="w-[3px] h-6 bg-white"></div>
+          <div class="w-[3px] h-6 bg-white"></div>
+          <div class="w-[3px] h-6 bg-white"></div>
+        </div>
+      </div>
+      <div x-show="open === 3" x-collapse class="bg-white px-6 pb-4 rounded-b-xl text-sm">
+        Stripe is available in many countries. Contact us to confirm yours.
+      </div>
+
+      <!-- Faixa Marrom -->
+      <div class="flex items-center rounded-xl overflow-hidden shadow">
+        <div class="flex-shrink-0 bg-[#5D3A00] text-white w-full px-6 py-4 font-semibold text-lg flex justify-between items-center">
+          <span>Is BJJ-OPS mobile-friendly?</span>
+          <span @click="open === 4 ? open = null : open = 4" class="cursor-pointer text-xl">+</span>
+        </div>
+        <div class="flex gap-[2px] bg-black px-3 py-4">
+          <div class="w-[3px] h-6 bg-white"></div>
+          <div class="w-[3px] h-6 bg-white"></div>
+          <div class="w-[3px] h-6 bg-white"></div>
+          <div class="w-[3px] h-6 bg-white"></div>
+        </div>
+      </div>
+      <div x-show="open === 4" x-collapse class="bg-white px-6 pb-4 rounded-b-xl text-sm">
+        Yes — it works perfectly on phones, tablets, and desktops.
+      </div>
+
+      <!-- Faixa Preta com ponta vermelha -->
+      <div class="flex items-center rounded-xl overflow-hidden shadow">
+        <div class="flex-shrink-0 bg-black text-white w-full px-6 py-4 font-semibold text-lg flex justify-between items-center">
+          <span>Can I use my own payment processor?</span>
+          <span @click="open === 5 ? open = null : open = 5" class="cursor-pointer text-xl">+</span>
+        </div>
+        <div class="flex gap-[2px] bg-red-700 px-3 py-4">
+          <div class="w-[3px] h-6 bg-white"></div>
+          <div class="w-[3px] h-6 bg-white"></div>
+          <div class="w-[3px] h-6 bg-white"></div>
+          <div class="w-[3px] h-6 bg-white"></div>
+        </div>
+      </div>
+      <div x-show="open === 5" x-collapse class="bg-white px-6 pb-4 rounded-b-xl text-sm">
+        Yes — you can use Stripe or connect your own billing provider.
       </div>
 
     </div>
   </div>
 </section>
+
 
   <!-- Contact -->
   <footer id="contact" class="bg-gray-900 text-white text-center py-12">
