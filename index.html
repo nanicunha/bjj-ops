@@ -245,126 +245,83 @@
 <!-- FAQ Section -->
 
 
-    <section class="py-12 bg-[#f9f4ff]">
+   <section class="py-12 bg-[#f9f4ff]">
   <div class="max-w-2xl mx-auto text-center">
-    <h2 class="text-3xl font-extrabold text-gray-900 mb-10 font-[Orbitron]"><span class="text-red-600">🥋
-  Everything You Want to Know<span class="text-red-600">.</span>
-</h2>
+    <h2 class="text-3xl font-extrabold text-gray-900 mb-10 font-[Orbitron]">
+      🥋 Everything You Want to Know<span class="text-red-600">.</span>
+    </h2>
 
-
-    <div class="space-y-4 text-left" x-data="{ open: null }">
-
-      <!-- Faixa branca com ponta preta -->
-    <div class="mb-4">
-      <div class="flex items-center h-16 bg-white rounded-lg shadow-md overflow-hidden">
+    <!-- FAQ ITEM - Faixa branca -->
+    <div x-data="{ open: false }" class="mb-4">
+      <div @click="open = !open" class="flex items-center h-16 bg-white rounded-lg shadow-md overflow-hidden cursor-pointer">
         <div class="w-20 bg-black h-full"></div>
-        <div class="flex-1 px-4 font-bold text-black text-base font-[Orbitron] text-center">
+        <div class="flex-1 px-4 font-[Orbitron] text-base text-center text-black">
           Is BJJ-OPS only for Jiu-Jitsu?
         </div>
-        <div class="px-4 text-2xl">+</div>
+        <div class="px-4 text-2xl text-black" x-text="open ? '-' : '+'"></div>
+      </div>
+      <div x-show="open" x-transition class="mt-2 text-sm text-gray-700 text-left px-6">
+        Not at all! While it’s tailored for Jiu-Jitsu academies, BJJ-OPS can be used by any martial arts or fitness school.
       </div>
     </div>
-        <button @click="open === 1 ? open = null : open = 1"
-          class="w-full text-left px-6 py-4 font-semibold flex justify-between items-center">
-          <span>Is BJJ-OPS only for Jiu-Jitsu?</span>
-          <span>+</span>
-        </button>
-      </div>
-      <div x-show="open === 1" x-collapse class="bg-white px-6 pb-4 rounded-b-xl text-sm max-w-3xl mx-auto">
-        Yes — it was built exclusively for BJJ academies.
-      </div>
 
-       <!-- Faixa azul com ponta preta -->
-    <div class="mb-4">
-      <div class="flex items-center h-16 rounded-lg shadow-md overflow-hidden bg-blue-700 text-white">
+    <!-- Faixa azul -->
+    <div x-data="{ open: false }" class="mb-4">
+      <div @click="open = !open" class="flex items-center h-16 bg-blue-700 rounded-lg shadow-md overflow-hidden text-white cursor-pointer">
         <div class="w-20 bg-black h-full"></div>
         <div class="flex-1 px-4 font-[Orbitron] text-base text-center">
           Do I need to install anything?
         </div>
-        <div class="px-4 text-2xl">+</div>
+        <div class="px-4 text-2xl" x-text="open ? '-' : '+'"></div>
+      </div>
+      <div x-show="open" x-transition class="mt-2 text-sm text-white text-left px-6">
+        No installation required. BJJ-OPS is 100% web-based. You can use it on any device, anywhere.
       </div>
     </div>
 
-        <button @click="open === 2 ? open = null : open = 2"
-          class="w-full text-left px-6 py-4 font-semibold flex justify-between items-center">
-          <span>Do I need to install anything?</span>
-          <span>+</span>
-        </button>
-      </div>
-      <div x-show="open === 2" x-collapse class="bg-white px-6 pb-4 rounded-b-xl text-sm max-w-3xl mx-auto">
-        No — it’s 100% cloud-based and mobile-friendly.
-      </div>
-
-     <!-- Faixa roxa com ponta preta -->
-    <div class="mb-4">
-      <div class="flex items-center h-16 rounded-lg shadow-md overflow-hidden bg-purple-600 text-white">
+    <!-- Faixa roxa -->
+    <div x-data="{ open: false }" class="mb-4">
+      <div @click="open = !open" class="flex items-center h-16 bg-purple-600 rounded-lg shadow-md overflow-hidden text-white cursor-pointer">
         <div class="w-20 bg-black h-full"></div>
         <div class="flex-1 px-4 font-[Orbitron] text-base text-center">
           Does Stripe work in my country?
         </div>
-        <div class="px-4 text-2xl">+</div>
+        <div class="px-4 text-2xl" x-text="open ? '-' : '+'"></div>
+      </div>
+      <div x-show="open" x-transition class="mt-2 text-sm text-white text-left px-6">
+        Stripe supports over 45 countries. If it’s not available in yours, we can help set up alternatives.
       </div>
     </div>
-        <button @click="open === 3 ? open = null : open = 3"
-          class="w-full text-left px-6 py-4 font-semibold flex justify-between items-center">
-          <span>Does Stripe work in my country?</span>
-          <span>+</span>
-        </button>
-      </div>
-      <div x-show="open === 3" x-collapse class="bg-white px-6 pb-4 rounded-b-xl text-sm max-w-3xl mx-auto">
-        Stripe is available in many countries. Contact us to confirm yours.
-      </div>
 
-     <!-- Faixa marrom com ponta preta -->
-    <div class="mb-4">
-      <div class="flex items-center h-16 rounded-lg shadow-md overflow-hidden bg-[#5C3A00] text-white">
+    <!-- Faixa marrom -->
+    <div x-data="{ open: false }" class="mb-4">
+      <div @click="open = !open" class="flex items-center h-16 bg-[#5C3A00] rounded-lg shadow-md overflow-hidden text-white cursor-pointer">
         <div class="w-20 bg-black h-full"></div>
         <div class="flex-1 px-4 font-[Orbitron] text-base text-center">
           Is BJJ-OPS mobile-friendly?
         </div>
-        <div class="px-4 text-2xl">+</div>
+        <div class="px-4 text-2xl" x-text="open ? '-' : '+'"></div>
+      </div>
+      <div x-show="open" x-transition class="mt-2 text-sm text-white text-left px-6">
+        Absolutely. It’s fully responsive and works beautifully on phones, tablets, and desktops.
       </div>
     </div>
-        <button @click="open === 4 ? open = null : open = 4"
-          class="w-full text-left px-6 py-4 font-semibold flex justify-between items-center">
-          <span>Is BJJ-OPS mobile-friendly?</span>
-          <span>+</span>
-        </button>
-      </div>
-      <div x-show="open === 4" x-collapse class="bg-white px-6 pb-4 rounded-b-xl text-sm max-w-3xl mx-auto">
-        Yes — it works perfectly on phones, tablets, and desktops.
-      </div>
 
-     <!-- Faixa preta com ponta vermelha -->
-    <div class="mb-4">
-      <div class="flex items-center h-16 rounded-lg shadow-md overflow-hidden bg-black text-white">
+    <!-- Faixa preta com ponta vermelha -->
+    <div x-data="{ open: false }" class="mb-4">
+      <div @click="open = !open" class="flex items-center h-16 bg-black rounded-lg shadow-md overflow-hidden text-white cursor-pointer">
         <div class="w-20 bg-red-600 h-full"></div>
         <div class="flex-1 px-4 font-[Orbitron] text-base text-center">
           Can I use my own payment processor?
         </div>
-        <div class="px-4 text-2xl">+</div>
+        <div class="px-4 text-2xl" x-text="open ? '-' : '+'"></div>
       </div>
-    </div>
-  </div>
-        <button @click="open === 5 ? open = null : open = 5"
-          class="w-full text-left px-6 py-4 font-semibold flex justify-between items-center">
-          <span>Can I use my own payment processor?</span>
-          <span>+</span>
-        </button>
+      <div x-show="open" x-transition class="mt-2 text-sm text-white text-left px-6">
+        Currently we support Stripe only, but custom integrations are possible on request.
       </div>
-      <div x-show="open === 5" x-collapse class="bg-white px-6 pb-4 rounded-b-xl text-sm max-w-3xl mx-auto">
-        Yes — you can use Stripe or connect your own billing provider.
-      </div>
-
     </div>
   </div>
 </section>
-
-    </div>
-  </div>
-</section>
-
-
   <!-- Contact -->
   <footer id="contact" class="bg-gray-900 text-white text-center py-12">
     <p class="mb-2"><a href="https://wa.me/14079280183" class="underline">(407) 928-0183</a></p>
