@@ -243,24 +243,27 @@
 
 
 <!-- FAQ Section -->
-<section id="faq" class="py-20 bg-purple-50 text-gray-800">
-<section id="faq" class="py-20 bg-purple-50 text-gray-800">
-  <div class="max-w-4xl mx-auto text-center">
-    <h2 class="text-3xl font-bold mb-12">❓ Frequently Asked Questions</h2>
+
+
+    <section class="py-12 bg-[#f9f4ff]">
+  <div class="max-w-2xl mx-auto text-center">
+    <h2 class="text-3xl font-extrabold text-gray-900 mb-10 font-[Orbitron]"><span class="text-red-600">🥋
+  Everything You Want to Know<span class="text-red-600">.</span>
+</h2>
+
 
     <div class="space-y-4 text-left" x-data="{ open: null }">
 
-      <!-- ⚪️ Faixa Branca com ponta preta e 4 tarjas -->
-      <div class="flex items-center rounded-xl overflow-hidden shadow w-full max-w-3xl mx-auto bg-white text-black">
-        <div class="flex items-center px-4 py-4">
-          <div class="bg-black w-4 h-6 mr-1 rounded-sm"></div>
-          <div class="flex gap-[2px]">
-            <div class="w-[3px] h-6 bg-white"></div>
-            <div class="w-[3px] h-6 bg-white"></div>
-            <div class="w-[3px] h-6 bg-white"></div>
-            <div class="w-[3px] h-6 bg-white"></div>
-          </div>
+      <!-- Faixa branca com ponta preta -->
+    <div class="mb-4">
+      <div class="flex items-center h-16 bg-white rounded-lg shadow-md overflow-hidden">
+        <div class="w-20 bg-black h-full"></div>
+        <div class="flex-1 px-4 font-bold text-black text-base font-[Orbitron] text-center">
+          Is BJJ-OPS only for Jiu-Jitsu?
         </div>
+        <div class="px-4 text-2xl">+</div>
+      </div>
+    </div>
         <button @click="open === 1 ? open = null : open = 1"
           class="w-full text-left px-6 py-4 font-semibold flex justify-between items-center">
           <span>Is BJJ-OPS only for Jiu-Jitsu?</span>
@@ -271,17 +274,17 @@
         Yes — it was built exclusively for BJJ academies.
       </div>
 
-      <!-- 🔵 Faixa Azul com 4 tarjas brancas -->
-      <div class="flex items-center rounded-xl overflow-hidden shadow w-full max-w-3xl mx-auto bg-[#1E3A8A] text-white">
-        <div class="flex items-center px-4 py-4">
-          <div class="bg-[#1E3A8A] w-4 h-6 mr-1 rounded-sm"></div>
-          <div class="flex gap-[2px]">
-            <div class="w-[3px] h-6 bg-white"></div>
-            <div class="w-[3px] h-6 bg-white"></div>
-            <div class="w-[3px] h-6 bg-white"></div>
-            <div class="w-[3px] h-6 bg-white"></div>
-          </div>
+       <!-- Faixa azul com ponta preta -->
+    <div class="mb-4">
+      <div class="flex items-center h-16 rounded-lg shadow-md overflow-hidden bg-blue-700 text-white">
+        <div class="w-20 bg-black h-full"></div>
+        <div class="flex-1 px-4 font-[Orbitron] text-base text-center">
+          Do I need to install anything?
         </div>
+        <div class="px-4 text-2xl">+</div>
+      </div>
+    </div>
+
         <button @click="open === 2 ? open = null : open = 2"
           class="w-full text-left px-6 py-4 font-semibold flex justify-between items-center">
           <span>Do I need to install anything?</span>
@@ -292,17 +295,16 @@
         No — it’s 100% cloud-based and mobile-friendly.
       </div>
 
-      <!-- 🟣 Faixa Roxa -->
-      <div class="flex items-center rounded-xl overflow-hidden shadow w-full max-w-3xl mx-auto bg-[#6D28D9] text-white">
-        <div class="flex items-center px-4 py-4">
-          <div class="bg-[#6D28D9] w-4 h-6 mr-1 rounded-sm"></div>
-          <div class="flex gap-[2px]">
-            <div class="w-[3px] h-6 bg-white"></div>
-            <div class="w-[3px] h-6 bg-white"></div>
-            <div class="w-[3px] h-6 bg-white"></div>
-            <div class="w-[3px] h-6 bg-white"></div>
-          </div>
+     <!-- Faixa roxa com ponta preta -->
+    <div class="mb-4">
+      <div class="flex items-center h-16 rounded-lg shadow-md overflow-hidden bg-purple-600 text-white">
+        <div class="w-20 bg-black h-full"></div>
+        <div class="flex-1 px-4 font-[Orbitron] text-base text-center">
+          Does Stripe work in my country?
         </div>
+        <div class="px-4 text-2xl">+</div>
+      </div>
+    </div>
         <button @click="open === 3 ? open = null : open = 3"
           class="w-full text-left px-6 py-4 font-semibold flex justify-between items-center">
           <span>Does Stripe work in my country?</span>
@@ -313,17 +315,16 @@
         Stripe is available in many countries. Contact us to confirm yours.
       </div>
 
-      <!-- 🟤 Faixa Marrom -->
-      <div class="flex items-center rounded-xl overflow-hidden shadow w-full max-w-3xl mx-auto bg-[#5D3A00] text-white">
-        <div class="flex items-center px-4 py-4">
-          <div class="bg-[#5D3A00] w-4 h-6 mr-1 rounded-sm"></div>
-          <div class="flex gap-[2px]">
-            <div class="w-[3px] h-6 bg-white"></div>
-            <div class="w-[3px] h-6 bg-white"></div>
-            <div class="w-[3px] h-6 bg-white"></div>
-            <div class="w-[3px] h-6 bg-white"></div>
-          </div>
+     <!-- Faixa marrom com ponta preta -->
+    <div class="mb-4">
+      <div class="flex items-center h-16 rounded-lg shadow-md overflow-hidden bg-[#5C3A00] text-white">
+        <div class="w-20 bg-black h-full"></div>
+        <div class="flex-1 px-4 font-[Orbitron] text-base text-center">
+          Is BJJ-OPS mobile-friendly?
         </div>
+        <div class="px-4 text-2xl">+</div>
+      </div>
+    </div>
         <button @click="open === 4 ? open = null : open = 4"
           class="w-full text-left px-6 py-4 font-semibold flex justify-between items-center">
           <span>Is BJJ-OPS mobile-friendly?</span>
@@ -334,17 +335,17 @@
         Yes — it works perfectly on phones, tablets, and desktops.
       </div>
 
-      <!-- ⚫️ Faixa Preta com ponta vermelha e 4 tarjas -->
-      <div class="flex items-center rounded-xl overflow-hidden shadow w-full max-w-3xl mx-auto bg-black text-white">
-        <div class="flex items-center px-4 py-4">
-          <div class="bg-red-700 w-4 h-6 mr-1 rounded-sm"></div>
-          <div class="flex gap-[2px]">
-            <div class="w-[3px] h-6 bg-white"></div>
-            <div class="w-[3px] h-6 bg-white"></div>
-            <div class="w-[3px] h-6 bg-white"></div>
-            <div class="w-[3px] h-6 bg-white"></div>
-          </div>
+     <!-- Faixa preta com ponta vermelha -->
+    <div class="mb-4">
+      <div class="flex items-center h-16 rounded-lg shadow-md overflow-hidden bg-black text-white">
+        <div class="w-20 bg-red-600 h-full"></div>
+        <div class="flex-1 px-4 font-[Orbitron] text-base text-center">
+          Can I use my own payment processor?
         </div>
+        <div class="px-4 text-2xl">+</div>
+      </div>
+    </div>
+  </div>
         <button @click="open === 5 ? open = null : open = 5"
           class="w-full text-left px-6 py-4 font-semibold flex justify-between items-center">
           <span>Can I use my own payment processor?</span>
